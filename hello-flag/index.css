@@ -1,147 +1,211 @@
 p {
     color:rgb(250, 252, 253);
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-            }
-body{
+}
+
+body {
     background-color: #89b6c9;
-    border: 3px solid rgb(3, 3, 3);
     height: 100vh;
     margin: 0;   
-    }
-    .brasil-flag {
-        margin: 0 auto;
-        position: relative;
-        background-color: #13812e;
-        width: 250px;
-        height: 150px;
-      }
-      .brasil-flag .losangue:before,
-      .brasil-flag .losangue:after {
-        position: absolute;
-      }
-      
-      .brasil-flag .losangue {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      }
-      
-      .brasil-flag .losangue:before,
-      .brasil-flag .losangue:after {
-        content: '';
-        width: 0;
-        height: 0;
-        left: 20px;
-        right: 20px;
-      }
-      
-      .brasil-flag .losangue:before {
-        border-left: 105px solid transparent;
-        border-right: 105px solid transparent;
-        border-bottom: 65px solid #ffe11f;
-        top: 10px;
-      }
-      
-      .brasil-flag .losangue:after {
-        border-left: 105px solid transparent;
-        border-right: 105px solid transparent;
-        border-top: 65px solid #ffe11f;
-        bottom: 10px;
-      }
-      .brasil-flag .circle {
-        overflow: hidden;
-        z-index: 2;
-        display: block;
-        background-color: #1651b8;
-        height: 80px;
-        width: 80px;
-        margin-top: -40px;
-        margin-left: -40px;
-      
-        top: 50%;
-        left: 50%;
-        position: absolute;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-      }     
-      .brasil-flag .circle,
-      .brasil-flag .circle:before,
-      .brasil-flag .circle:after {
-        top: 50%;
-        left: 50%;
-        position: absolute;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-      }
-      
-      .brasil-flag .circle:before,
-      .brasil-flag .circle:after {
-        width: 90px;
-        height: 40px;
-        -ms-transform: rotate(14deg);
-        -webkit-transform: rotate(14deg);
-        transform: rotate(14deg);
-      }
-      
-      .brasil-flag .circle:before {
-        z-index: 3;
-        content: '';
-        margin-top: -20px;
-        margin-left: -45px;
-        background: #fff;
-      }
-      
-      .brasil-flag .circle:after {
-        z-index: 4;
-        content: '';
-        margin-top: -10px;
-        margin-left: -48px;
-        background-color: #1651b8;
-      }
-      .italia-flag {
-        display: flex;
-        width: 250px;
-        margin: 0 auto;
-      }
-      .italia-flag .retangle {
-        margin: 0 auto;
-        position: relative;
-        height: 150px ;
-        width: 83px;
-      }
-      .italia-flag .green {
-        background-color: rgb(5, 107, 5);
-      }
-      .italia-flag .white {
-        background-color: rgb(239, 241, 239);
-      }
-      .italia-flag .red {
-        background-color: rgb(190, 5, 5);
-      }
-      .japan-flag .retangle {
-        margin: 0 auto;
-        position: relative;
-        background-color: rgb(244, 244, 252);
-        height: 150px;
-        width: 250px;
-      }
-      .japan-flag .circle {
-        overflow: hidden;
-        z-index: 2;
-        display: block;
-        background-color: #d80b0b;
-        height: 90px;
-        width: 90px;
-        position: absolute;
-        border-radius: 50%;
-        top: 23%;
-        left: 30%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-      }
+}
+    
+.grid-conteiner {
+  margin: 90px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns:  repeat(4, auto);
+  padding: 1px;
+}
+
+.grid-conteiner a {
+  width: 250px;
+}
+
+.flag {
+  margin:0 auto;
+  margin-top: 10px;
+  width: 250px;
+  height: 150px;
+}
+
+.brasil-flag {
+  position: relative;
+  background-color: #13812e;
+  }
+
+.brasil-flag .losangue:before,
+.brasil-flag .losangue:after {
+  position: absolute;
+}
+
+.brasil-flag .losangue {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.brasil-flag .losangue:before,
+.brasil-flag .losangue:after {
+  content: '';
+  width: 0;
+  height: 0;
+  left: 20px;
+  right: 20px;
+}
+
+.brasil-flag .losangue:before {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-bottom: 65px solid #ffe11f;
+  top: 10px;
+}
+
+.brasil-flag .losangue:after {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-top: 65px solid #ffe11f;
+  bottom: 10px;
+}
+
+.brasil-flag .circle {
+  overflow: hidden;
+  z-index: 2;
+  display: block;
+  background-color: #1651b8;
+  height: 80px;
+  width: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.brasil-flag .circle,
+.brasil-flag .circle:before,
+.brasil-flag .circle:after {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.brasil-flag .circle:before,
+.brasil-flag .circle:after {
+  width: 90px;
+  height: 40px;
+  -ms-transform: rotate(14deg);
+  -webkit-transform: rotate(14deg);
+  transform: rotate(14deg);
+}
+
+.brasil-flag .circle:before {
+  z-index: 3;
+  content: '';
+  margin-top: -20px;
+  margin-left: -45px;
+  background: #fff;
+}
+
+.brasil-flag .circle:after {
+  z-index: 4;
+  content: '';
+  margin-top: -10px;
+  margin-left: -48px;
+  background-color: #1651b8;
+}
+
+.italia-flag, .france-flag {
+  display: flex;
+}
+
+.retangle {
+  margin: 0 auto;
+  position: relative;
+  height: 150px ;
+  width: 83px;
+}
+
+.italia-flag .green {
+  background-color: rgb(5, 107, 5);
+}
+
+.italia-flag .white {
+  background-color: rgb(239, 241, 239);
+}
+
+.italia-flag .red {
+  background-color: rgb(190, 5, 5);
+}
+
+.japan-flag .retangle {
+  margin: 0 auto;
+  position: relative;
+  background-color: rgb(244, 244, 252);
+  height: 150px;
+  width: 250px;
+}
+
+.japan-flag .circle {
+  overflow: hidden;
+  z-index: 2;
+  display: block;
+  background-color: #d80b0b;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  border-radius: 50%;
+  top: 21%;
+  left: 30%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.france-flag .blue {
+  background-color: rgb(35, 37, 170);
+}
+
+.france-flag .white {
+  background-color: rgb(239, 241, 239);
+}
+
+.france-flag .red {
+  background-color: rgb(190, 5, 5);
+}
+
+.portugal-flag {
+  display: flex;
+}
+
+.portugal-flag img {
+  position: absolute;
+  height: 90px;
+  margin-top: 30px;
+  margin-left: 48.5px;
+}
+
+.portugal-flag .retangle {
+  margin: 0 auto;
+  position: relative;
+  height: 150px ;
+ }
+
+.portugal-flag .green {
+  background-color: rgb(5, 107, 5);
+  width:38% ;
+}
+
+.portugal-flag .red {
+  background-color: rgb(216, 14, 14);
+  width: 62%;
+}
