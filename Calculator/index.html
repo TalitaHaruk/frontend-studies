@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h3>calculadora básica</h3>
+    <div>
+        <form>
+            <label>numero 1:</label><br />
+            <input type="number" id="numero1"><br />
+            <label>numero 2:</label><br />
+            <input type="number" id="numero2"><br />
+            <button type="button" onclick="sum(numero1.value, numero2.value)">+</button>
+            <button type="button" onclick="sub(numero1.value, numero2.value)">-</button>
+            <button type="button" onclick="mult(numero1.value, numero2.value)">x</button> 
+            <button type="button" onclick="divide(numero1.value, numero2.value)">/</button><br />
+            Resposta: <span id="res"></span>
+        </form> 
+    </div>
+
+</body>
+</html>
+

@@ -132,7 +132,7 @@ body {
 .retangle {
   margin: 0 auto;
   position: relative;
-  height: 150px ;
+  height: 150px;
   width: 83px;
 }
 
@@ -197,12 +197,12 @@ body {
 .portugal-flag .retangle {
   margin: 0 auto;
   position: relative;
-  height: 150px ;
+  height: 150px;
  }
 
 .portugal-flag .green {
   background-color: rgb(5, 107, 5);
-  width:38% ;
+  width:38%;
 }
 
 .portugal-flag .red {
